@@ -1,0 +1,31 @@
+{
+  "title": "CrossWord",
+  "description": "Haz tu propio crucigrama introduciendo las palabras y las pistas",
+  "majorVersion": 2,
+  "minorVersion": 0,
+  "patchVersion": 2,
+  "runnable": 1,
+  "author": "Jose Manuel Riballo Moreno",
+  "license": "cc-by-sa",
+  "machineName": "H5P.CrossWord",
+  "preloadedCss": [
+	{"path": "css/mycrossword.css"}
+  ],
+  "preloadedJs": [
+    {
+	  "path": "js/mycrossword.js"
+	},
+	{
+	  "path": "js/crossword.js"
+	},
+	{
+	  "path": "js/word.js"
+	},
+	{
+	  "path": "js/cell.js"
+	},
+	{
+	  "path": "js/cellNode.js"
+	}
+  ]
+}

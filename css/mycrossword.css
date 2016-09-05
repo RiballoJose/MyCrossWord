@@ -1,0 +1,165 @@
+body{
+    display: inline-block;
+}
+
+
+#crossword {
+    text-align:center;
+}
+.crossword {
+    border-collapse:collapse;
+    font-family:"Courier New", Courier, monospace;
+    margin-left:auto;
+    margin-right:auto;
+    clear:both;
+    margin-top:3em;
+    margin-bottom:3em;
+	float:left;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+.crossword td {
+    border:1px solid black;
+    padding:0;
+    margin:0;
+    vertical-align:middle;
+    padding:0;
+    text-align:center;
+	background-color: #fff;
+    width:3em;
+    height:3em;
+	position: relative;
+}
+
+.crossword td span {
+	color: #444;
+	font-size: 0.8em;
+	position: absolute;
+	top: -1px;
+	left: 1px;
+}
+
+.crossword td input {
+	border:1px solid black;
+    padding:0;
+    margin:0;
+    vertical-align:middle;
+    padding:0;
+    text-align:center;
+	background-color: #ffffb3;
+    width:3em;
+    height:3em;
+}
+
+.crossword .no-border {
+    border:none;
+}
+
+.crossword td input.solved {
+	background-color: #80ff80;
+}
+.crossword td input.hide{
+	background-color: #ffffb3;
+}
+
+.crossword td input.focused {
+    background: #e6f7ff;
+}
+
+.crossword td input:focus {
+	background-color: #b3e6ff;
+}
+
+.crossword td input.solved:focus{
+	background-color: #80ff80;
+}
+.crossword td input.hide.solved:focus{
+	background-color: #b3e6ff;
+}
+span.focused{
+	background:#b3e6ff;
+}
+
+.crossword #legend {
+	float: right;
+	width: auto;
+	display: inline-block;
+}
+
+
+.across-legend {
+    /* display: inline-block; */
+    margin-left: 1em;
+    margin-right: 1em;
+	border: 1px;
+}
+.down-legend {
+    /* display: inline-block; */
+    margin-left: 1em;
+    margin-right: 1em;
+	border: 1px;
+}
+.h5p-joubelui-button {
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0.5em 1em;
+  padding: 0.5em 1.25em;
+  border-radius: 2em;
+
+  background: #1a73d9;
+  color: #ffffff;
+
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+
+  display: inline-block;
+  text-align: center;
+  text-shadow: none;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+.h5p-question-buttons {
+  vertical-align:center;
+  margin: 0 1em;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.15s ease, margin 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+}
+.h5p-question-buttons.h5p-question-visible {
+  max-height: none;
+  opacity: 1;
+  transition: max-height 0.15s ease, margin 0.15s ease, opacity 0.15s ease-in;
+}
+.checks{
+	margin-top: 5em;
+	margin-bottom: 2em;
+	display: inline-block;
+}
+span.check_text{
+	font-size:2em;
+	border: 1px;
+}
+.crossword td span.word_h{
+	left: 0.1em;
+	top: 0.8em;
+	vertical-align:top;
+}
+.crossword td span.word_v{
+	left: 1.5em;
+	top:-0.4em;
+	vertical-align:bottom;
+}
+div#legend {
+    display: initial;
+	margin-left:2em;
+	margin-right:2em;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+div#checks {
+    display: inherit;
+}

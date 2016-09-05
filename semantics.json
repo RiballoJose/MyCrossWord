@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Words",
+	"name": "words",
+    "type": "list",
+    "entity": "word",
+    "min": 3,
+    "max": 30,
+    "field": {
+      "type": "group",
+      "label": "Word",
+      "fields": [
+        {
+          "label": "Text",
+		  "name": "word_text",
+          "type": "text",
+          "maxLength": 15,
+		  "description": "The word to find."
+        },
+        {
+          "label": "Clue",
+          "name": "clue",
+          "type": "text",
+          "maxLength": 100,
+          "description": "The clue."
+        }
+      ]
+    }
+  },
+  {
+	"name": "accent_mark",
+	"type": "boolean",
+	"label": "Accent marks",
+	"description": "Distinguish between accent mark character?",
+	"default": true
+  },
+  {
+	"name": "upper",
+	"type": "boolean",
+	"label": "Upper or Lower",
+	"description": "Distinguish between upper and lower case?",
+	"default": true
+  },
+  {
+  "name": "difficulty",
+  "type": "select",
+  "label": "Difficulty",
+  "description": "Select the difficulty",
+  "options": [
+    {
+      "value": "easy",
+      "label": "Easy"
+    },
+    {
+      "value": "normal",
+      "label": "Normal"
+    },
+	{
+	  "value": "hard",
+	  "label": "Hard"
+	}
+  ],
+  "default": "easy"
+  }
+]
